@@ -5,4 +5,5 @@ enum CameraControlProtocol {
   demo,
   eosCineHttp,
   eosPtpIp,
+  PtpIp,
 }

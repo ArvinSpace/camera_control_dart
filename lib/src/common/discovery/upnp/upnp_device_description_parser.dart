@@ -13,11 +13,13 @@ class UpnpDeviceDescriptionParser {
       final document = XmlDocument.parse(xmlContent);
 
       final deviceElement = document.findFirstRecursive('device');
+      final friendlyName = deviceElement.findFirst('friendlyName').innerText;
       final modelName = deviceElement.findFirst('modelName').innerText;
       final uniqueDeviceName = deviceElement.findFirst('UDN').innerText;
 
       return UpnpDeviceDescription(
         address: address,
+        friendlyName: friendlyName,
         modelName: modelName,
         uniqueDeviceName: uniqueDeviceName,
       );

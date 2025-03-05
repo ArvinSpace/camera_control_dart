@@ -16,6 +16,8 @@ class CameraFactoryProvider {
         return EosCineHttpCameraFactory();
       case CameraControlProtocol.eosPtpIp:
         return EosPtpIpCameraFactory();
+      case CameraControlProtocol.PtpIp:
+        return EosPtpIpCameraFactory(); // FIXME
     }
   }
 }

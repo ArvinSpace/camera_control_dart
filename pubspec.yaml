@@ -1,7 +1,7 @@
 name: camera_control_dart
 description: Remote control supported Canon EOS cameras.
-version: 0.0.1
-repository: https://github.com/JulianSchroden/camera_control_dart
+version: 0.0.3
+repository: https://github.com/ArvinSpace/camera_control_dart
 
 environment:
   sdk: ^3.0.0
